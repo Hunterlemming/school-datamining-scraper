@@ -6,3 +6,4 @@ if __name__ == "__main__":
     initialize_chrome_driver()
     scrape_jofogas()
     disconnect()
+    print("All Done!")

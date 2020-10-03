@@ -19,7 +19,7 @@ def go_to_url(url):
 
 def get_web_element(rel_xpath, root=None):
     try:
-        if root == None:
+        if root is None:
             return DRIVER.find_element_by_xpath(rel_xpath)
         return root.find_element_by_xpath(rel_xpath)
     except NoSuchElementException:
@@ -28,7 +28,7 @@ def get_web_element(rel_xpath, root=None):
 
 def get_web_elements(rel_xpath, root=None):
     try:
-        if root == None:
+        if root is None:
             return DRIVER.find_elements_by_xpath(rel_xpath)
         return root.find_elements_by_xpath(rel_xpath)
     except NoSuchElementException:
