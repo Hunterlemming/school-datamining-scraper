@@ -1,0 +1,7 @@
+.vscode
+
+__pycache__
+venv
+
+data/output
+data/debug
