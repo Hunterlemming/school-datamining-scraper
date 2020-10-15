@@ -9,7 +9,7 @@ DRIVER = None
 def initialize_chrome_driver():
     global DRIVER
     options = Options()
-    options.headless = True
+    options.headless = False
     DRIVER = webdriver.Chrome(options=options, executable_path="./selenium_driver/chromedriver")
 
 
